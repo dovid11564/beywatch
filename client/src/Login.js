@@ -1,7 +1,7 @@
 import Home from './Home';
 import React, { useState } from "react"
 
-function Login({ user, setUser }) {
+function Login({ setUser }) {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
@@ -46,7 +46,7 @@ function Login({ user, setUser }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Login</button>
+        <button type="submit" onClick={handleSubmit}>Login</button>
       </div>
 
       <Home />
