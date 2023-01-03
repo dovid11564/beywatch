@@ -177,6 +177,7 @@ GEM
 
 PLATFORMS
   ruby
+  x8664-linux
   x86_64-darwin-19
 
 DEPENDENCIES
