@@ -13,7 +13,7 @@ function App() {
 
   //login fetch? will work on this comment later
   useEffect(() => {
-    //autho login, yall!
+    //auto login, yall!
     fetch("http://localhost:4000/me").then((response) => {
       if (response.ok) {
         response.json().then((user) => setUser(user))
@@ -45,7 +45,7 @@ function App() {
 
             {/* login path */}
             <Route path="/login">
-              <Login setUser={setUser} />
+              <Login user={user} setUser={setUser} />
             </Route>
             <Route path="/">
               <Home />
