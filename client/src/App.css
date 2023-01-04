@@ -1,20 +1,27 @@
-.navbar{
-    padding: 2rem 1rem;
-    margin: 2rem 0;
-    background-color: rgba(255, 35, 19, 0.699);
+.navbar {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 35, 19, 0.699);
+  display: flex;
+  align-items: center;
 }
 
-.login-form-label-input{
-    margin-bottom: 15px;
+.login-form-label-input {
+  margin-bottom: 15px;
 }
-.login-form-p{
-    color: dodgerblue
+
+.login-form-p {
+  color: dodgerblue
 }
 
 
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
+
 /* Full-width input fields */
-  input[type=text], input[type=password] {
+input[type=text],
+input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -24,7 +31,8 @@
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus,
+input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -42,7 +50,7 @@ button {
 }
 
 button:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 /* Extra styles for the cancel button */
@@ -52,7 +60,8 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn,
+.signupbtn {
   float: left;
   width: 50%;
 }
@@ -64,13 +73,18 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
   background-color: #474e5d;
   padding-top: 50px;
 }
@@ -78,9 +92,11 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -114,8 +130,20 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+
+  .cancelbtn,
+  .signupbtn {
     width: 100%;
   }
 }
-/* @import url(); */
+
+/* this stuff handles the banner image on home page 
+TODO: make it more dynamic? */
+.home-image-banner {
+  width: 1162px;
+  aspect-ratio: auto 1162 / 369;
+  height: 369px;
+
+  overflow-clip-margin: content-box;
+  overflow: clip
+}
