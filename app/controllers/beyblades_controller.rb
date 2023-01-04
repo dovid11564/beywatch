@@ -1,0 +1,2 @@
+class BeybladesController < ApplicationController
+end
