@@ -25,7 +25,10 @@ function NavBar({ user, setUser }) {
                     </>
                 )}
             </div>
+            
+        { (user) ? <p>you are currently signed in as {user.username}</p> :  <p> you are not logged in, please log in to your account or sign up for an account</p> }
         </header>
+        
     )
 }
 

@@ -14,6 +14,7 @@ function App() {
   //login fetch? will work on this comment later
   useEffect(() => {
     //auto login, yall!
+    //TODO: check if this is the right link syntax
     fetch("http://localhost:4000/me").then((response) => {
       if (response.ok) {
         response.json().then((user) => setUser(user))
@@ -33,11 +34,9 @@ function App() {
             <Route path="/">
               <Home user={user} />
             </Route>
-
           </Switch>
         ) :
           <Switch>
-
             {/* signup route */}
             <Route path="/signup">
               <SignUp setUser={setUser} />

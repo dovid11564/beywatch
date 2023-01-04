@@ -31,37 +31,6 @@ function SignUp({ setUser }) {
 
     return (
         <div>
-            {/* <div>
-             <form onSubmit={handleSubmit}>
-                <h1>Sign Up</h1>
-                <label htmlFor="username">Username</label>
-                <input
-                    type="text"
-                    id="username"
-                    autoComplete="off"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                />
-                <label htmlFor="password">Password</label>
-                <input
-                    type="password"
-                    id="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    autoComplete="current-password"
-                />
-                <label htmlFor="password">Password Confirmation</label>
-                <input
-                    type="password"
-                    id="password_confirmation"
-                    value={passwordConfirmation}
-                    onChange={(e) => setPasswordConfirmation(e.target.value)}
-                    autoComplete="current-password"
-                />
-                <button type="submit">Sign Up</button>  
-                </form>
-             </div> */}
-
             <div id="id01" className="modal">
                 {/* ternary that displays the signup form or sign button */}
                 
@@ -120,10 +89,7 @@ function SignUp({ setUser }) {
                             </div>
                         </div>
                          {/* <button onClick={setSignUp(!SignUp)}>Click To Sign Up!</button> */}
-                
-
                     </form>
-                
             </div>
         </div>
     )
