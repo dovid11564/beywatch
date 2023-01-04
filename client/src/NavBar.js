@@ -11,7 +11,7 @@ function NavBar({ user, setUser }) {
     }
 
     return (
-        <header class="navbar">
+        <header className="navbar">
             <div>
                 <Link to="/">Home</Link>
             </div>

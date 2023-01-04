@@ -51,7 +51,14 @@ function Login({ setUser }) {
 
       <Home />
 
+      
+
+
+
+
     </div>
+
+    
   )
 }
 

@@ -10,10 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_25_030818) do
+ActiveRecord::Schema.define(version: 2023_01_03_195033) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "beyblades", force: :cascade do |t|
+    t.string "name"
+    t.string "model"
+    t.float "price"
+    t.string "power_type"
+    t.integer "power_level"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "inventories", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "beyblade_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["beyblade_id"], name: "index_inventories_on_beyblade_id"
+    t.index ["user_id"], name: "index_inventories_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
@@ -22,4 +41,6 @@ ActiveRecord::Schema.define(version: 2022_12_25_030818) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "inventories", "beyblades"
+  add_foreign_key "inventories", "users"
 end
