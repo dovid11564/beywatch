@@ -2,8 +2,8 @@ import BeybladeCard from "./BeybladeCard";
 
 function BeybladeList({ beyblades }) {
 
-    return(
-        <ul className="beybladelist-beyblade-cards">
+  return (
+    <ul className="beybladelist-beyblade-cards">
       {beyblades.map((beyblade) => {
         return (
           <BeybladeCard
@@ -12,8 +12,9 @@ function BeybladeList({ beyblades }) {
           />
         )
       })}
+      
     </ul>
-    )
+  )
 }
 
 export default BeybladeList
