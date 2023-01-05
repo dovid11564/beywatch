@@ -1,5 +1,6 @@
 import Home from './Home';
 import React, { useState } from "react"
+import NavBar from './NavBar';
 
 //TODO: why am I not destructuring the user prop which is passed down
 function Login({ setUser }) {
@@ -27,6 +28,7 @@ function Login({ setUser }) {
 
 
     <div>
+      <NavBar />
       <div>
         <form onSubmit={handleLogin}></form>
         <h1>Welcome Back, Blader!</h1>
@@ -50,16 +52,8 @@ function Login({ setUser }) {
         <button type="submit" onClick={handleLogin}>Login</button>
       </div>
 
-      <Home />
-
-      
-
-
-
-
+      {/* <Home /> */}
     </div>
-
-    
   )
 }
 
